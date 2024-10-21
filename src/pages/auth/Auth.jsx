@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
-import axios from "axios";
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/rsu-logo.png";
-import { baseApiUrl, appName } from '../../utils/constant';
+import { appName } from '../../utils/constant';
 
 const Auth = () => {
     const navigate = useNavigate();
