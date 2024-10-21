@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { faculties } from '../../engine_config'; // Assuming this contains the faculties data
+import { faculties } from '../../utils/constant';
 
 const Department = () => {
   const navigate = useNavigate();
@@ -19,12 +19,12 @@ const Department = () => {
             selectedFaculty ? (
               <div>
                 <h2 className="text-2xl font-bold mb-4">{selectedFaculty.name} Departments</h2>
-                <div className='grid grid-cols-4 gap-8'>
+                <div className='grid grid-cols-3 gap-8'>
                   {selectedFaculty.departments.map((department, i) => (
                     <div 
                     key={i} 
                     className="shadow-md bg-slate-400 p-4 font-bold capitalize rounded-md text-center cursor-pointer" 
-                    onClick={()=> navigate("/lecturer")}
+                    onClick={()=> navigate("/lecturers")}
                     >
                       {department}
                     </div>
