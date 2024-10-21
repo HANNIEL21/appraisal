@@ -19,7 +19,7 @@ const Department = () => {
             selectedFaculty ? (
               <div>
                 <h2 className="text-2xl font-bold mb-4">{selectedFaculty.name} Departments</h2>
-                <div className='grid grid-cols-3 gap-8'>
+                <div className='grid md:grid-cols-3 gap-8 px-4'>
                   {selectedFaculty.departments.map((department, i) => (
                     <div 
                     key={i} 
