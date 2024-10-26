@@ -1,4 +1,4 @@
-export const appName = "APPRAISAL ENGINE";
+export const appName = "APPRAISAL SYSTEM";
 
 export const faculties = [
     {
@@ -111,3 +111,21 @@ export const faculties = [
         ]
     }
 ]
+
+export const activities = [
+    { id: 1, name: "Assignment/Test" },
+    { id: 2, name: "Punctuality to Class" },
+    { id: 3, name: "Regularity to Lectures" },
+    { id: 4, name: "Sells Handout by Force" },
+    { id: 5, name: "Sells Textbook by Force" },
+    { id: 6, name: "Friendly" },
+    { id: 7, name: "Conducts Practical for Relevant Departments" },
+    { id: 8, name: "Collects Sorting/Money" },
+    { id: 9, name: "Adds to Knowledge Beyond Textbook" },
+    { id: 10, name: "Students’ Participation in Class" },
+    { id: 11, name: "Covers Scheme of Work" },
+    { id: 12, name: "Conducts Field Work/Excursion" },
+    { id: 13, name: "Decent and Neatly Dressed" },
+    { id: 14, name: "Lecturing Method" },
+    { id: 15, name: "Quality of Lecturing" }
+];

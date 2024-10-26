@@ -18,9 +18,9 @@ const Faculty = () => {
     ]
 
     return (
-        <div className='h-screen w-full flex items-center justify-center bg-slate-500'>
+        <div className='h-screen w-full flex items-center justify-center bg-slate-500 overflow-auto'>
             <main>
-                <section className='grid grid-cols-3 gap-8 px-10'>
+                <section className='grid grid-cols-1 md:grid-cols-3 gap-8 px-10'>
                     {
                         faculties.map((item, i) => (
                             <div 
