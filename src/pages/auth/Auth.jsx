@@ -7,7 +7,7 @@ const Auth = () => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        navigate("/info");
+        navigate("/dashboard");
     }
 
     return (

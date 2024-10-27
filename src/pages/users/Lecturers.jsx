@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaChevronLeft } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
-const Lecturers = () => {
+const LecturerScreen = () => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -59,4 +59,4 @@ const Lecturers = () => {
   );
 };
 
-export default Lecturers;
+export default LecturerScreen;
