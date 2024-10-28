@@ -12,6 +12,8 @@ const Auth = () => {
     const dispatch = useDispatch();
 
     const { auth } = useSelector((state) => state.auth);
+    console.log(auth.email);
+    
 
     const handleLogin = async () => {
         if (auth.email === "" || auth.password === "") {
