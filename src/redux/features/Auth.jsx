@@ -1,5 +1,4 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from 'axios';
+import { createSlice } from "@reduxjs/toolkit";
 
 
 // Slice
@@ -10,7 +9,7 @@ export const authSlice = createSlice({
             email: "",
             password: "",
         },
-        currentUser: null,
+        user: null,
         isLoading: false,
         isError: false,
         message: "",
@@ -23,7 +22,7 @@ export const authSlice = createSlice({
             state.auth.password = action.payload;
         },
         setUser: (state, action) => {
-            state.currentUser = action.payload;
+            state.user = action.payload;
         },
         setLoadingTrue: (state) => {
             state.isLoading = true;
@@ -38,7 +37,7 @@ export const authSlice = createSlice({
         logout: (state) => {
             state.auth.email = "";
             state.auth.password = "";
-            state.currentUser = null;
+            state.user = null;
             state.isLoading = false;
             state.isError = false;
             state.message = "Logged out successfully";
